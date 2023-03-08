@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dotnet60-basic-ggjf
+  namespace: e2e-demos-fusc-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images-protected@sha256:6df85344acbbeb1e1faa93bd85f6c8c8edb781c5163145a35b330f0ff2d7d3f8
+        name: main
+        resources: {}
+status: {}
